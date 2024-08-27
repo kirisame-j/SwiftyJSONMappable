@@ -33,20 +33,20 @@ Pod::Spec.new do |s|
 
   s.subspec "Mappable" do |ss|
 	ss.source_files = "Pod/Classes/JSONMappable.swift"	
-  	ss.dependency "SwiftyJSON", "~>3.1.4"
+  	ss.dependency "SwiftyJSON"
   	ss.frameworks = "Foundation"
   end
 
-  s.subspec "Moya" do |ss|
-	ss.source_files = "Pod/Classes/Response+JSONMappable.swift"	
-  	ss.dependency "Moya"
-	ss.dependency "SwiftyJSONMappable/Mappable"
-  end
+#  s.subspec "Moya" do |ss|
+#	ss.source_files = "Pod/Classes/Response+JSONMappable.swift"	
+#  	ss.dependency "Moya"
+#	ss.dependency "SwiftyJSONMappable/Mappable"
+#  end
 
-  s.subspec "RxSwift" do |ss|
-	ss.source_files = "Pod/Classes/Observable+JSONMappable.swift"	
-  	ss.dependency "Moya/RxSwift"
-	ss.dependency "SwiftyJSONMappable/Moya"
-  end
+#  s.subspec "RxSwift" do |ss|
+#	ss.source_files = "Pod/Classes/Observable+JSONMappable.swift"	
+#  	ss.dependency "Moya/RxSwift"
+#	ss.dependency "SwiftyJSONMappable/Moya"
+#  end
 
 end
